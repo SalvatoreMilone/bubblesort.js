@@ -6,6 +6,8 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    color: white;
+    background-color: rgb(52, 52, 52);
 }
 
 .container >*{
@@ -14,10 +16,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-
-.container{
-    border-bottom: rgb(211, 75, 41) 5px solid;
+    border-bottom: rgb(126, 126, 126) 5px solid;
+    box-shadow: 0px -3px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
 .container:nth-child(2){
