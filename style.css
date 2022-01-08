@@ -4,7 +4,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container >*{
@@ -20,7 +21,7 @@ body{
 }
 
 .container:nth-child(2){
-    margin: 100px 0;
+    margin-top: 50px;
 }
 
 #numeriDiv{
