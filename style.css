@@ -1,0 +1,47 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container >*{
+    height:20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    border-bottom: rgb(211, 75, 41) 5px solid;
+}
+
+.container:nth-child(2){
+    margin: 100px 0;
+}
+
+#numeriDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+#sortNumeriDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+#numeriDiv >*{
+    padding-top: 2px;
+    border-radius: 10px 10px 0 0;
+}
+#sortNumeriDiv >*{
+    padding-top: 2px;
+    border-radius: 10px 10px 0 0;
+}
