@@ -13,6 +13,8 @@ for (let i=0 ; i < arrNumeri.length; i++){
 for (let i=0; i < arrNumeri.length; i++){
 
         for (let j = 0; j < arrNumeri.length; j++){
+            
+            
             if(arrNumeri[i] < arrNumeri[j]){   
                 appoggio = arrNumeri[i];
                 arrNumeri[i] = arrNumeri[j];
@@ -39,7 +41,3 @@ for (let i=0 ; i < arrNumeri.length; i++){
     sortedNumero.style.backgroundColor = "rgb(235," + colorChange + ",52)";
     
 }
-
-
-
-
