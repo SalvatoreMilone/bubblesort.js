@@ -1,5 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 body{
+
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +16,7 @@ body{
     overflow: hidden;
     color: white;
     background-color: rgb(52, 52, 52);
+    margin-top: 20px;
 }
 
 .container >*{
@@ -16,7 +26,11 @@ body{
     justify-content: center;
     align-items: flex-start;
     border-bottom: rgb(126, 126, 126) 5px solid;
+    transition: all 200ms;
+}
 
+.container > div:hover{
+    filter: hue-rotate(-100deg);
 }
 
 .container:nth-child(2){
@@ -44,4 +58,81 @@ body{
 #sortNumeriDiv >*{
     padding-top: 2px;
     border-radius: 10px 10px 0 0;
+}
+
+#sortContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header > *{
+    margin-top: 10px;
+}
+
+
+#btnShuffle{
+    padding: 10px 15PX;
+    background-color: rgb(236, 126, 24);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 500ms;
+}
+#btnShuffle:hover{
+    background-color: rgb(220, 182, 57);
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, .5);
+}
+#btnInOrDec{
+    margin: 20px 0;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(236, 126, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 350ms;
+    animation: rotate2 250ms forwards;
+}
+
+#btnInOrDec.increase{
+    background-color: rgb(220, 182, 57);
+    animation: rotate 250ms both;
+}
+
+#btnInOrDec:hover{
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, .5);
+}
+
+#btnInOrDec.increase:hover{
+    box-shadow: 0px -5px 10px 3px rgba(0, 0, 0, .5);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-150deg);
+    }
+}
+
+@keyframes rotate2 {
+    0%{
+        transform: rotate(-150deg);
+    }
+    100% {
+        transform: rotate(-35deg);
+    }
 }
